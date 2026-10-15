@@ -1,0 +1,11 @@
+[ {
+  "id" : 1,
+  "nombre" : "juan",
+  "correo" : "jazocar@duocuc.cl",
+  "carrera" : "ing en informatica"
+}, {
+  "id" : 2,
+  "nombre" : "juan 2",
+  "correo" : "juan2@gmail.com",
+  "carrera" : "analista"
+} ]

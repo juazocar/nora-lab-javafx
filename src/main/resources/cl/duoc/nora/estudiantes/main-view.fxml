@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="cl.duoc.nora.estudiantes.controller.MainController">
+    <top><Label text="Gestión de Estudiantes" style="-fx-font-size:22px;-fx-font-weight:bold;" BorderPane.alignment="CENTER"/></top>
+    <center>
+        <TableView fx:id="tblEstudiantes" prefWidth="620">
+            <columns>
+                <TableColumn fx:id="colId" text="ID" prefWidth="70"/>
+                <TableColumn fx:id="colNombre" text="Nombre" prefWidth="180"/>
+                <TableColumn fx:id="colCorreo" text="Correo" prefWidth="220"/>
+                <TableColumn fx:id="colCarrera" text="Carrera" prefWidth="160"/>
+            </columns>
+            <BorderPane.margin><Insets top="20" right="10" bottom="20" left="20"/></BorderPane.margin>
+        </TableView>
+    </center>
+    <right>
+        <VBox spacing="10" prefWidth="250">
+            <padding><Insets top="20" right="20" bottom="20" left="10"/></padding>
+            <Label text="Datos del estudiante"/>
+            <TextField fx:id="txtNombre" promptText="Nombre"/>
+            <TextField fx:id="txtCorreo" promptText="Correo"/>
+            <TextField fx:id="txtCarrera" promptText="Carrera"/>
+            <Button text="Guardar" onAction="#guardar" maxWidth="Infinity"/>
+            <Button text="Eliminar" onAction="#eliminar" maxWidth="Infinity"/>
+            <Button text="Limpiar" onAction="#limpiar" maxWidth="Infinity"/>
+        </VBox>
+    </right>
+</BorderPane>
